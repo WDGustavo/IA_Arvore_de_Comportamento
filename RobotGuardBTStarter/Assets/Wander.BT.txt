@@ -1,0 +1,8 @@
+//cria a arvore de decisão
+tree("Root")
+	//fala que é uma sequencia
+	sequence
+		//Faz uma escolha aleatoria de posição
+		PickRandomDestination
+		//Se move para o local escolhido aleatoriamente
+		MoveToDestination
