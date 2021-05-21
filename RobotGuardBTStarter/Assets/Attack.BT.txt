@@ -1,0 +1,12 @@
+//cria a arvore de decisão
+tree("Root")
+	while SeePlayer
+		//fala que é uma sequencia
+		sequence
+			//pega a posição do player
+			TargetPlayer
+			//olha para o player
+			LookAtTarget
+			//atira
+			Wait(0.2)
+			Fire

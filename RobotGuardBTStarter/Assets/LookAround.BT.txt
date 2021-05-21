@@ -1,0 +1,14 @@
+//cria a arvore de decisão
+tree("Root")
+	//fala que é uma sequencia
+	sequence
+		//randomiza
+		random(5,1,1,1) 
+			Turn(90.0)
+			Turn(-90.0)
+			Turn(145.0)
+			Turn(-27.0)
+		//olha para a posição escolhida
+		LookAtTarget
+		//espera o random
+		WaitRandom(1.0,5.0)
