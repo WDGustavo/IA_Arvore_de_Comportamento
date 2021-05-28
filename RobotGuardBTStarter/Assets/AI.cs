@@ -203,5 +203,25 @@ public class AI : MonoBehaviour
         return true;
     }
     //*Fim LookAround.BT
+    //*Death
+    [Task]
+    //metodo para verificar se a vida dele for menor que o valor escolhido
+    public bool IsHealthLessThan(float health) 
+    { 
+        //retorna a vida dele para o float setado no metodo
+        return this.health < health; 
+    }
+    [Task]
+    //metodo para fazer o estado de morte
+    public bool Explode() 
+    { 
+        //destroi a barra de vida
+        Destroy(healthBar.gameObject); 
+        //destroi o objeto que comtem o script
+        Destroy(this.gameObject); 
+        //retorna como true
+        return true; 
+    }
+    //*Fim Death
 }
 
